@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>BusLink</title>
+    <link rel="stylesheet" href="styles\styles.css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet">
+
+    <!-- Script para la animación de la imagen -->
+    <script>
+        window.addEventListener('load', function () {
+            const imagen = document.querySelector('.imagen-animada');
+            imagen.classList.add('loaded');
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img class="imagen_logo" src="images\logo.png">
+
+        <nav class="barra">
+            <a href="#" class="Home_link">HOME</a>
+            <a href="#link_Servicios">SERVICIOS</a>
+            <a href="#link_nosotros" >NOSOTROS</a>
+            <a href="#link_contacto" >CONTACTO</a>
+        </nav>
+
+    </header>
+
+    <!--Landing-->
+
+    <main>
+        <div class="Inicial_contenedor">
+
+            <div class="Frase_Principal">
+                <h1 class="Titulo_bus">BusLink</h1>
+                <p class="frase_1">Transforma tu viaje diario en una experiencia sin preocupaciones.</p>
+                <p class="Disponible">Disponible en:</p>
+                <div class="Botones-Principal">
+                    <a href="https://play.google.com/" target="_blank" ><img class="botonAndroid" src="images\pngwing 1ANDROID.png"></a>
+                    <a href="https://www.apple.com/app-store/" target="_blank "><img class="botonApple" src="images\APPLELOGO.png"></a>
+                </div>
+            </div>
+            <div class="media_cont">
+                <div class="Imagen_contenedor">
+                    <div class="mySlides fade">
+                        <img src="images/cards/mano1.png" alt="ImagenInicial" class="imagen-animada">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/cards/mano2.png" alt="ImagenInicial" class="imagen-animada">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/cards/mano4.png" alt="ImagenInicial" class="imagen-animada">
+                    </div>
+                </div>
+            </div>
+            <script src="scripts.js"></script>
+        </div>
+    </main>
+
+    <!--Servicios-->
+
+    <h1 class="Titulos" id="link_Servicios"> NUESTROS SERVICIOS </h1>
+    <div class="cartas-container">
+
+        <div class="carta">
+            <img class="imgirt" src="images/cards/1.png" alt="Imagen 1">
+            <h2>Tarjeta para transporte</h2>
+            <p>Simplifica el proceso de pago y validación, eliminando la necesidad de aplicaciones externas</p>
+        </div>
+
+        <div class="carta">
+            <img class="imgirt"src="images\seguridad.png" alt="Imagen 1">
+            <h2>Seguridad en Pagos</h2>
+            <p>Las tarjetas electrónicas inteligentes ofrecen un método de pago seguro, minimizando el riesgo de errores y fraudes </p>
+        </div>
+
+        <div class="carta">
+            <img class="imgirt"src="images\busper.png" alt="Imagen 2">
+            <h2>Automatización</h2>
+            <p>El saldo de cada tarjeta se acumula automáticamente a la sección de pagos pendientes de matrícula</p>
+        </div>
+
+    </div>
+    
+    
+
+
+    <!--Sobre Nosotros-->
+    <h1 class="Titulos" id="link_nosotros"> SOBRE NOSOTROS </h1>
+
+    <div class="Contenedor_Nosotros">
+
+        <div class="Imagenes">
+            <div class="imagen_contenedor"><img src="images\integrantes_grupo\jd.png" alt="Imagen 1"></div>
+            <div class="imagen_contenedor"><img src="images\integrantes_grupo\al.png" alt="Imagen 2"></div>
+            <div class="imagen_contenedor"><img src="images\integrantes_grupo\ga.png" alt="Imagen 3"></div>
+            <div class="imagen_contenedor"><img src="images\integrantes_grupo\sto.png" alt="Imagen 4"></div>
+            <div class="imagen_contenedor"><img src="images\integrantes_grupo\es.png" alt="Imagen 5"></div>
+        </div>
+
+        <div class="Texto">
+            <div class="Texto_Interno">
+                <p>"BusLink" es una innovadora aplicacion desarrollada por Unibus, una startup compuesta por
+                    estudiantes de la UPC, con la finalidad de optimizar la experiencia de transporte de los estudiantes
+                    universitarios. Nuestra misión es proporcionar una herramienta que todos los universitarios usuarios 
+                    de buses sean capaces de utilizar para reducir los tiempos de pago al usarlos. 
+                    Como startup nos comprometemos a  ofrecer una herramienta efectiva y confiable en su uso. </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Exclusividad-->
+    <h1 class="Titulos">PREGUNTAS FRECUENTES</h1>
+
+    <div class="contenedor_exclusividad">
+
+        <div class="imagen_exclusividad"> <img src="images\personal.png" alt="Imagen"> </div>
+        <div class="casillas">
+            <div class="caja-info">¿Cómo consigo una tarjeta?</div>
+            <div class="caja-info">¿Qué beneficios me aporta esta tarjeta?</div>
+            <div class="caja-info">¿Qué hacer en caso de perdida de mi tarjeta?</div>
+            <div class="caja-info">¿Cuánto y cómo se realiza el pago?</div>
+            <div class="caja-info">¿Qué universidades estan asociadas con el servicio?</div>
+        </div>
+    </div>
+
+    <!--Contactanos-->
+    <div>
+        <div class="Contactanos" id="link_contacto">
+            <div class="Contactanos_titulo">
+                <span class="Contactanos_titulo_texto">CONTÁCTANOS</span>
+            </div>
+
+            <div class="Contactanos_contendor">
+                <div class="Contactanos_formulario">
+                    <form action="procesar_formulario.php" method="post" class="formulario_contacto">
+                        <!-- Campo de correo -->
+                        <div class="campo_formulario">
+                            <label for="correo" class="texto_formulario">Correo Electrónico:</label>
+                            <input type="email" id="correo" name="correo" required class="cuadro-texto">
+                        </div>
+
+                        <!-- Campo de asunto -->
+                        <div class="campo_formulario">
+                            <label for="asunto" class="texto_formulario">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required class="cuadro-texto">
+                        </div>
+
+                        <!-- Campo de descripción -->
+                        <div class="campo_formulario">
+                            <label for="descripcion" class="texto_formulario">Descripción:</label>
+                            <textarea id="descripcion" name="descripcion" rows="4" required
+                            class="cuadro-texto-desc" style="resize: none;"></textarea>
+                        </div>
+
+                        <!-- Botón de envío -->
+                        <input type="submit" value="Enviar" class="boton_enviar">
+                    </form>
+                </div>
+                <div class="Contactanos_imagen_ejemplo"><img src="images\negocios.png" alt="Imagen 11"></div>
+ 
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer_container">
+            <!-- La imagen -->
+            <div class="footer_logo_container">
+                <img class="footer_logo" src="images/logo.png" alt="ig">
+            </div>
+    
+            <div class="footer_misc">
+                <div class="footer_misc_cont">
+                    <!-- Botón -->
+                    <input type="submit" value="¿ALGÚN PROBLEMA?" class="footer_boton">
+                    <!-- Imágenes -->
+                    <div class="footer_redes">
+                        <a href="#"><img class="imagen_redes" src="images/ig.png" alt="ig"></a>
+                        <a href="#"><img class="imagen_redes" src="images/face.png" alt="facebook"></a>
+                        <a href="#"><img class="imagen_redes" src="images/tuiter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
+
+</body>
+
+</html>
